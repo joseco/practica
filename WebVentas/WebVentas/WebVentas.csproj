@@ -56,6 +56,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebVentas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\WebVentas.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ventas.aspx" />
@@ -64,9 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Productos.aspx" />
-    <Content Include="Clientes.aspx" />
+    <Content Include="FormularioClientes.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Clases\EntidadCliente.cs" />
+    <Content Include="App_Code\BLL\ClienteBLL.cs" />
+    <Compile Include="App_Code\DAL\Cliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Ventas.aspx.cs">
       <DependentUpon>Ventas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -80,15 +91,12 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Clientes.aspx.cs">
-      <DependentUpon>Clientes.aspx</DependentUpon>
+    <Compile Include="FormularioClientes.aspx.cs">
+      <DependentUpon>FormularioClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\BLL\" />
-    <Folder Include="App_Code\Clases\" />
-    <Folder Include="App_Code\DAL\" />
     <Folder Include="css\" />
     <Folder Include="fonts\" />
     <Folder Include="images\" />
@@ -96,12 +104,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="App_Code\DAL\Cliente.xsc">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Code\DAL\Cliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cliente.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\DAL\Cliente.xss">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="Properties\PublishProfiles\Proyecto.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
