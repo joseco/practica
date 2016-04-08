@@ -1,0 +1,5 @@
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaDatos\bin\Debug\Datos.dll.config
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaDatos\bin\Debug\Datos.dll
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaDatos\bin\Debug\Datos.pdb
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaDatos\obj\Debug\Datos.dll
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaDatos\obj\Debug\Datos.pdb

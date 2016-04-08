@@ -1,0 +1,7 @@
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\bin\Debug\BLL.dll
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\bin\Debug\BLL.pdb
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\bin\Debug\Datos.dll
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\bin\Debug\Datos.pdb
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\obj\Debug\BLL.dll
+C:\Users\Alvaro\Desktop\softw3\nuevo\SoluciónMaestroDetalles\CapaNegocio\obj\Debug\BLL.pdb
