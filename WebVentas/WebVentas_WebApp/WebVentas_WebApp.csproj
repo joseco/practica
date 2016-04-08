@@ -63,8 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FormularioCliente.aspx" />
+    <Content Include="FormularioProducto.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="ListaClientes.aspx" />
+    <Content Include="ListaProducto.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,6 +83,13 @@
     <Compile Include="FormularioCliente.aspx.designer.cs">
       <DependentUpon>FormularioCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormularioProducto.aspx.cs">
+      <DependentUpon>FormularioProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioProducto.aspx.designer.cs">
+      <DependentUpon>FormularioProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +103,13 @@
     </Compile>
     <Compile Include="ListaClientes.aspx.designer.cs">
       <DependentUpon>ListaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProducto.aspx.cs">
+      <DependentUpon>ListaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaProducto.aspx.designer.cs">
+      <DependentUpon>ListaProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -93,7 +93,7 @@
                 </asp:TextBox>
                 <asp:RequiredFieldValidator runat="server"
                     ForeColor="Red"
-                    ControlToValidate="NitTextBox"
+                    ControlToValidate="PrecioTextBox"
                     Display="Dynamic"
                     ValidationGroup="Productos"
                     ErrorMessage="Debe ingresar el precio">
@@ -113,7 +113,7 @@
                 Cancelar
             </asp:HyperLink>
 
-            <asp:HiddenField ID="ContactoIdHiddenField" runat="server"
+            <asp:HiddenField ID="ProductoIdHiddenField" runat="server"
                 Value="0" />
 
         </div>
