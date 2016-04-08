@@ -1,6 +1,0 @@
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\bin\WebVentas.dll.config
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\bin\WebVentas.dll
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\bin\WebVentas.pdb
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\obj\Release\WebVentas.csprojResolveAssemblyReference.cache
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\obj\Release\WebVentas.dll
-C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\WebVentas\obj\Release\WebVentas.pdb

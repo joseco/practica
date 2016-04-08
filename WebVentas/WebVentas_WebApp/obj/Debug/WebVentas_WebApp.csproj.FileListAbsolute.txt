@@ -1,0 +1,12 @@
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\WebVentas.dll.config
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\WebVentas.dll
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\WebVentas.pdb
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\Controladores.dll
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\Entidades.dll
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\AccesoDatos.dll
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\Controladores.pdb
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\Entidades.pdb
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\bin\AccesoDatos.pdb
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\obj\Debug\WebVentas_WebApp.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\obj\Debug\WebVentas.dll
+C:\Users\usuario\Desktop\Sotware 3\CS\WebVentas_WebApp\obj\Debug\WebVentas.pdb
