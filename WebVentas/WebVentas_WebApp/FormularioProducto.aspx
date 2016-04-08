@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Portfolio | Bootstrap .net Templates</title>
+    <title>Producto | Formulario</title>
     <%-- ------ CSS ------ --%>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -44,7 +44,7 @@
                         <li class="active"><a href="Inicio.aspx">Inicio</a></li>
                        <li><a href="FormularioProductos.aspx">Productos</a></li>
                         <li><a href="FormularioCliente.aspx">Clientes</a></li>                        
-                        <li><a href="FormularioVentas.aspx">Venta</a></li>  
+                        <li><a href="VentA.aspx">Venta</a></li>  
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -67,16 +67,22 @@
         <div class="col-md-12">
 
              <h2>Formulario de registro de Productos</h2>
+             <p>&nbsp;</p>
                   <asp:Panel ID="ErrorPanel" runat="server" Visible="false"
-                CssClass="alert alert-danger" role="alert">
+                CssClass="alert alert-danger" role="alert" Height="27px">
                 Error al Guardar el producto
+                      <br />
+                      <br />
+                      <br />
             </asp:Panel>
 
-            <div class="form-group">
+             <div class="form-group">
+                 <br />
                 <label>Nombre producto</label>
                 <asp:TextBox ID="NombreTextBox" runat="server"
                     CssClass="form-control">
                 </asp:TextBox>
+                 <br />
                 <asp:RequiredFieldValidator runat="server"
                     ControlToValidate="NombreTextBox"
                     Display="Dynamic"
@@ -87,10 +93,12 @@
             </div>
             
             <div class="form-group">
+                <br />
                 <label>Precio</label>
                 <asp:TextBox ID="PrecioTextBox" runat="server"
                     CssClass="form-control">
                 </asp:TextBox>
+                <br />
                 <asp:RequiredFieldValidator runat="server"
                     ForeColor="Red"
                     ControlToValidate="PrecioTextBox"
@@ -98,6 +106,8 @@
                     ValidationGroup="Productos"
                     ErrorMessage="Debe ingresar el precio">
                 </asp:RequiredFieldValidator>
+                <br />
+                <br />
             </div>
             
             
@@ -108,7 +118,8 @@
                 OnClick="SaveButton_Click">
                 Guardar
             </asp:LinkButton>
-            <asp:HyperLink runat="server" CssClass="btn"
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink runat="server" CssClass="btn btn-primary"
                 NavigateUrl="~/ListaProducto.aspx">
                 Cancelar
             </asp:HyperLink>

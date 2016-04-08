@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListaClientes.aspx.cs" Inherits="WebVentas.ListaClientes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Venta.aspx.cs" Inherits="WebVentas.Venta" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,32 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <style type="text/css">
+        .auto-style2 {
+            width: 238px;
+            height: 59px;
+        }
+        .auto-style3 {
+            height: 47px;
+            width: 197px;
+        }
+        .auto-style4 {
+            width: 238px;
+            height: 47px;
+        }
+        .auto-style5 {
+            height: 59px;
+            width: 197px;
+        }
+        .auto-style6 {
+            height: 47px;
+            width: 204px;
+        }
+        .auto-style7 {
+            height: 59px;
+            width: 204px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,7 +62,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                  <%--  <a class="navbar-brand" href="Default.aspx"><img src="images/logo.png" alt="logo"></a>--%>
+                    <%--  <a class="navbar-brand" href="Default.aspx"><img src="images/logo.png" alt="logo"></a>--%>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -63,45 +89,62 @@
         <section id="portfolio">
         <div class="container">
             <div class="center">
-                <section class="row">
-        <div class="col-md-12">
-
-            <asp:HyperLink runat="server" NavigateUrl="~/FormularioCliente.aspx"
-                CssClass="btn btn-primary">
-                Nuevo Cliente
-            </asp:HyperLink>
-            <br /><br />
-
-            <asp:GridView ID="ClientesGridView" runat="server"
-                CssClass="table" GridLines="None"
-                AutoGenerateColumns="false"
-                OnRowCommand="ClientesGridView_RowCommand">
-                <Columns>
-                    <asp:TemplateField HeaderText="Editar">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="EditButton" runat="server" CommandName="Editar"
-                                CommandArgument='<%# Eval("cliente_id") %>'>
-                                <i class="glyphicon glyphicon-pencil"></i>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Eliminar">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="DeleteButton" runat="server" CommandName="Eliminar"
-                                OnClientClick="return confirm('Esta seguro que desea eliminar el Cliente seleccionado?')"
-                                CommandArgument='<%# Eval("cliente_id") %>'>
-                                <i class="glyphicon glyphicon-remove"></i>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="nombre" HeaderText="Nombre Completo" />
-                    <asp:BoundField DataField="nit" HeaderText="Nit CLiente" />
-            
-                </Columns>
-            </asp:GridView>
-
-        </div>
-    </section>
+               
+    <div style="min-height:300px; width:913px;">
+    <asp:Label ID="JlaberSubtotal" runat="server" Text="$ 0.00"></asp:Label>
+    <fieldset style="min-height:300px; " >
+        <legend>Ventas</legend>
+        <table style="margin:10px;">
+            <tr>
+                <td class="auto-style6">Codigo Venta</td>
+                <td class="auto-style3">Prodcuto:</td>
+                <td class="auto-style4">cliente</td>
+                <td class="auto-style4">Cantidad</td>
+                <td class="auto-style4">Precio</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">
+                   
+                    <asp:TextBox ID="txtcodigoVenta" MaxLength="10" Width="90" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+                <td class="auto-style5">
+                   
+                    <asp:DropDownList ID="DropDownListProducto" runat="server" DataSourceID="SqlDataSourceListaProducto" DataTextField="nombre" DataValueField="producto_id" Height="36px" Width="149px" CssClass="form-control">
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style2">
+                   
+                    <asp:DropDownList ID="DropDownListCliente" runat="server" DataSourceID="SqlDataSourceCliente" DataTextField="nombre" DataValueField="cliente_id" Height="37px" Width="149px" CssClass="form-control">
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtCANTIDAD" MaxLength="10" Width="90" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtPrecio" MaxLength="10" Width="90" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+        <table style="width:100%; margin-bottom: 55px;">
+            <tr>
+                <td style="text-align:center;">
+                    <br />
+                    <asp:Button ID="btnGrabar" OnClick="btnGrabar_Click" Width="100px" 
+                    Height="43px"  runat="server" Text="Grabar" CssClass="btn btn-primary" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnCancelar" OnClick="btnCancelar_Click" Width="100px" 
+                    Height="43px" runat="server" Text="Cancelar" CssClass="btn btn-primary" />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+        </table>
+        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+        <asp:SqlDataSource ID="SqlDataSourceListaProducto" runat="server" ConnectionString="<%$ ConnectionStrings:VentaConnectionString %>" SelectCommand="SELECT [producto_id], [nombre] FROM [tbl_producto]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSourceCliente" runat="server" ConnectionString="<%$ ConnectionStrings:VentaConnectionString %>" SelectCommand="SELECT [cliente_id], [nombre] FROM [tbl_cliente]"></asp:SqlDataSource>
+    </fieldset>
+    </div>
+    
                
  </div>
         

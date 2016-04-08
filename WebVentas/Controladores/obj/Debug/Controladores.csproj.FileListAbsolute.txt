@@ -7,3 +7,12 @@ C:\Users\usuario\Desktop\Sotware 3\CS\Controladores\bin\Debug\AccesoDatos.pdb
 C:\Users\usuario\Desktop\Sotware 3\CS\Controladores\obj\Debug\Controladores.csprojResolveAssemblyReference.cache
 C:\Users\usuario\Desktop\Sotware 3\CS\Controladores\obj\Debug\Controladores.dll
 C:\Users\usuario\Desktop\Sotware 3\CS\Controladores\obj\Debug\Controladores.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\Controladores.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\Controladores.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\AccesoDatos.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\bin\Debug\AccesoDatos.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\obj\Debug\Controladores.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\obj\Debug\Controladores.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Controladores\obj\Debug\Controladores.pdb

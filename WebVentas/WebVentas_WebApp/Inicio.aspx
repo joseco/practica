@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Home | Bootstrap .net Templates</title>
+    <title>Inicio | Sistema Venta</title>
     <%-- ------ CSS ------ --%>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -43,9 +43,9 @@
                 <div class="collapse navbar-collapse navbar-right">
                      <ul class="nav navbar-nav">
                         <li class="active"><a href="Inicio.aspx">Inicio</a></li>
-                       <li><a href="productos.aspx">Productos</a></li>
+                       <li><a href="FormularioProducto.aspx">Productos</a></li>
                         <li><a href="FormularioCliente.aspx">Clientes</a></li>                        
-                        <li><a href="Ventas.aspx">Venta</a></li>  
+                        <li><a href="Venta.aspx">Venta</a></li>  
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">

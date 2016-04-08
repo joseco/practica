@@ -38,23 +38,23 @@ namespace AccesoDatos
 
 			SqlParameter[] parameters = new SqlParameter[]
 			{
-				new SqlParameter("@fecha", (tbl_venta.Fecha==String.Empty)?Convert.DBNull:tbl_venta.Fecha),
+                new SqlParameter("@venta_id", (tbl_venta.Venta_id==0)?Convert.DBNull:tbl_venta.Venta_id),
+                new SqlParameter("@fecha", (tbl_venta.Fecha==String.Empty)?Convert.DBNull:tbl_venta.Fecha),
 				new SqlParameter("@cliente_id", (tbl_venta.Cliente_id==0)?Convert.DBNull:tbl_venta.Cliente_id),
 				new SqlParameter("@total", (tbl_venta.Total==0)?Convert.DBNull:tbl_venta.Total)
 			};
 
-			try
-			{
-			int CodigoIdentity = -1;
-			tbl_venta.Venta_id = (int) SqlHelper.ExecuteScalar(cn, CommandType.StoredProcedure, "sp_tbl_ventaInsert", parameters);
-			CodigoIdentity = tbl_venta.Venta_id;
-			return "Operacion Exitosa " + CodigoIdentity;
-			}
-			catch (Exception e)
-			{
-			return "Error: "+e;
-			}
-		}
+            try
+            {
+                int CodigoIdentity = -1;
+                SqlHelper.ExecuteNonQuery(cn, CommandType.StoredProcedure, "sp_tbl_ventaInsert", parameters);
+                return "Operacion Exitosa " + CodigoIdentity;
+            }
+            catch (Exception e)
+            {
+                return "Error: " + e;
+            }
+        }
 
 		/// <summary>
 		/// Actualizar filas en tbl_venta table.

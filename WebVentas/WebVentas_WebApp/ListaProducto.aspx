@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Portfolio | Bootstrap .net Templates</title>
+    <title>Lista | Producto</title>
     <%-- ------ CSS ------ --%>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -44,7 +44,7 @@
                         <li class="active"><a href="Inicio.aspx">Inicio</a></li>
                        <li><a href="FormularioProductos.aspx">Productos</a></li>
                         <li><a href="FormularioCliente.aspx">Clientes</a></li>                        
-                        <li><a href="FormularioVentas.aspx">Venta</a></li>  
+                        <li><a href="Venta.aspx">Venta</a></li>  
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -65,11 +65,12 @@
             <div class="center">
                 <section class="row">
         <div class="col-md-12">
-
+            <h2>Lista de Productos</h2>
+            <p>&nbsp;</p>
             <asp:HyperLink runat="server" NavigateUrl="~/FormularioProducto.aspx"
-                CssClass="btn btn-primary">
-                Nuevo Producto
+                CssClass="btn btn-primary">Nuevo Producto
             </asp:HyperLink>
+            <br />
             <br /><br />
 
             <asp:GridView ID="ProductoGridView" runat="server"
