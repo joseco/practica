@@ -48,8 +48,8 @@
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="listaproductos.aspx">Lista de productos</a></li>
-                                <li><a href="listaclientes.aspx">Lista de clientes</a></li>
+                                <li><a href="Listaproducto.aspx">Lista de productos</a></li>
+                                <li><a href="Listacliente.aspx">Lista de clientes</a></li>
                                 <li><a href="listaventas.aspx">Lista de ventas</a></li>
                              
                             </ul>
@@ -66,21 +66,21 @@
                 <section class="row">
         <div class="col-md-12">
 
-            <asp:HyperLink runat="server" NavigateUrl="~/FormularioCliente.aspx"
+            <asp:HyperLink runat="server" NavigateUrl="~/FormularioProducto.aspx"
                 CssClass="btn btn-primary">
-                Nuevo Cliente
+                Nuevo Producto
             </asp:HyperLink>
             <br /><br />
 
-            <asp:GridView ID="ClientesGridView" runat="server"
+            <asp:GridView ID="ProductoGridView" runat="server"
                 CssClass="table" GridLines="None"
                 AutoGenerateColumns="false"
-                OnRowCommand="ClientesGridView_RowCommand">
+                OnRowCommand="ProductoGridView_RowCommand">
                 <Columns>
                     <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
                             <asp:LinkButton ID="EditButton" runat="server" CommandName="Editar"
-                                CommandArgument='<%# Eval("cliente_id") %>'>
+                                CommandArgument='<%# Eval("producto_id") %>'>
                                 <i class="glyphicon glyphicon-pencil"></i>
                             </asp:LinkButton>
                         </ItemTemplate>
@@ -88,14 +88,14 @@
                     <asp:TemplateField HeaderText="Eliminar">
                         <ItemTemplate>
                             <asp:LinkButton ID="DeleteButton" runat="server" CommandName="Eliminar"
-                                OnClientClick="return confirm('Esta seguro que desea eliminar el Cliente seleccionado?')"
-                                CommandArgument='<%# Eval("cliente_id") %>'>
+                                OnClientClick="return confirm('Esta seguro que desea eliminar el Producto seleccionado?')"
+                                CommandArgument='<%# Eval("producto_id") %>'>
                                 <i class="glyphicon glyphicon-remove"></i>
                             </asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="nombre" HeaderText="Nombre Completo" />
-                    <asp:BoundField DataField="nit" HeaderText="Nit CLiente" />
+                    <asp:BoundField DataField="nombre" HeaderText="Nombre Producto" />
+                    <asp:BoundField DataField="Precio" HeaderText="Precio Producto" />
             
                 </Columns>
             </asp:GridView>
