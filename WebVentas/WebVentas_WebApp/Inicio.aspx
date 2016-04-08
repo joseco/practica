@@ -50,8 +50,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="Listaproducto.aspx">Lista de productos</a></li>
-                                <li><a href="Listacliente.aspx">Lista de clientes</a></li>
-                                <li><a href="listaventa.aspx">Lista de ventas</a></li>
+                                <li><a href="Listaclientes.aspx">Lista de clientes</a></li>
+                                <li><a href="Venta.aspx">Lista de ventas</a></li>
                              
                             </ul>
                         </li>                      

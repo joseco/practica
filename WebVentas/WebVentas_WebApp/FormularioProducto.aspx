@@ -44,13 +44,13 @@
                         <li class="active"><a href="Inicio.aspx">Inicio</a></li>
                        <li><a href="FormularioProductos.aspx">Productos</a></li>
                         <li><a href="FormularioCliente.aspx">Clientes</a></li>                        
-                        <li><a href="VentA.aspx">Venta</a></li>  
+                        <li><a href="Venta.aspx">Venta</a></li>  
                           <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="listaproductos.aspx">Lista de productos</a></li>
                                 <li><a href="listaclientes.aspx">Lista de clientes</a></li>
-                                <li><a href="listaventas.aspx">Lista de ventas</a></li>
+                                <li><a href="Venta.aspx">Lista de ventas</a></li>
                              
                             </ul>
                         </li>                      

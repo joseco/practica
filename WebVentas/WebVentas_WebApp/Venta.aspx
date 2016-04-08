@@ -75,8 +75,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listas <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 li><a href="Listaproducto.aspx">Lista de productos</a></li>
-                                <li><a href="Listacliente.aspx">Lista de clientes</a></li>
-                                <li><a href="listaventa.aspx">Lista de ventas</a></li
+                                <li><a href="Listaclientes.aspx">Lista de clientes</a></li>
+                                <li><a href="Venta.aspx">Lista de ventas</a></li
                              
                             </ul>
                         </li>                      
@@ -131,10 +131,23 @@
                     <br />
                     <asp:Button ID="btnGrabar" OnClick="btnGrabar_Click" Width="100px" 
                     Height="43px"  runat="server" Text="Grabar" CssClass="btn btn-primary" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnCancelar" OnClick="btnCancelar_Click" Width="100px" 
                     Height="43px" runat="server" Text="Cancelar" CssClass="btn btn-primary" />
                     <br />
+                    <br />
+                    <br />
+                    <asp:GridView ID="GridView1" runat="server" DataSourceID="ListaVentas" AllowPaging="True" AutoGenerateColumns="False" CssClass="table">
+                        <Columns>
+                            <asp:BoundField DataField="cliente" HeaderText="cliente" SortExpression="cliente" />
+                            <asp:BoundField DataField="nit" HeaderText="nit" SortExpression="nit" />
+                            <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
+                            <asp:BoundField DataField="cantidad" HeaderText="cantidad" SortExpression="cantidad" />
+                            <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
+                            <asp:BoundField DataField="fecha" HeaderText="fecha" SortExpression="fecha" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="ListaVentas" runat="server" ConnectionString="<%$ ConnectionStrings:VentaConnectionString %>" SelectCommand="SELECT tbl_cliente.nombre AS cliente, tbl_cliente.nit, tbl_detalleVenta.precio, tbl_detalleVenta.cantidad, tbl_producto.nombre AS producto, tbl_venta.fecha FROM tbl_venta INNER JOIN tbl_cliente ON tbl_venta.cliente_id = tbl_cliente.cliente_id INNER JOIN tbl_producto INNER JOIN tbl_detalleVenta ON tbl_producto.producto_id = tbl_detalleVenta.producto_id ON tbl_venta.venta_id = tbl_detalleVenta.venta_id"></asp:SqlDataSource>
                     <br />
                 </td>
             </tr>
