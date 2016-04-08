@@ -3,3 +3,8 @@ C:\Users\usuario\Desktop\Sotware 3\CS\Entidades\bin\Debug\Entidades.pdb
 C:\Users\usuario\Desktop\Sotware 3\CS\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\usuario\Desktop\Sotware 3\CS\Entidades\obj\Debug\Entidades.dll
 C:\Users\usuario\Desktop\Sotware 3\CS\Entidades\obj\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Entidades\bin\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Entidades\bin\Debug\Entidades.pdb
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Entidades\obj\Debug\Entidades.dll
+C:\Users\usuario\Desktop\Sotware 3\Practica\WebVentas\Entidades\obj\Debug\Entidades.pdb
